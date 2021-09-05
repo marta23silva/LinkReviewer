@@ -10,6 +10,7 @@ module.exports = {
 				{ name: 'Info', value: `\`!about\n!invite\n!git\``, inline: true },
 				{ name: 'Moderation', value: `\`!choose-channel\n!on\n!off\``, inline: true }
 			)
+			.setFooter('Having issues? Suggestions? Send me a message on Twitter! @tokyio___')
 		);
 	},
 
