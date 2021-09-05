@@ -1,0 +1,14 @@
+CREATE DATABASE LinkReviewerDB;
+
+CREATE TABLE Guild(
+	guildId VARCHAR(100) NOT NULL PRIMARY KEY,
+	guildOwnerId VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE GuildConfigurable(
+	guildId VARCHAR(100) NOT NULL PRIMARY KEY,
+	modChannelId VARCHAR(100) DEFAULT '0',
+	botReview VARCHAR(10) DEFAULT 'off',
+	prefix VARCHAR(10) DEFAULT '!',
+	FOREIGN KEY (guildId) REFERENCES Guild(guildId)
+);

@@ -1,0 +1,23 @@
+{
+  "name": "LinkReviewer",
+  "version": "1.0.0",
+  "description": "Deletes messages with links and sends them to mods to approve.",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./bot.js",
+    "start": "node ./bot.js"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Marta Silva",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12"
+  }
+}

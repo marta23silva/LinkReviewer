@@ -1,0 +1,9 @@
+# dotenv environments
+.env
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# MacOS System file
+.DS_Store
